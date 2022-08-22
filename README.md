@@ -1,71 +1,63 @@
-principal {
-    exibição : flexível;
-    flex-direction : coluna;
-    largura :  100 % ;
-    imagem de fundo :  url ( '../src/bg.jpg' );
-    tamanho do fundo : capa;
-    min-altura :  100 vh ;
-    align-items : centro;
-    justificar-conteúdo : centro;
-    preenchimento :  20px 20px 50px ; _  _  _
-}
+<!DOCTYPEhtml >
+< html  lang =" en " >
+< cabeça >
+    < meta  charset =" UTF-8 " >
+    < meta  name =" viewport " content =" largura=largura do dispositivo, escala inicial=1.0 " >
+    < link  rel =" folha de estilo " href =" ./style.css " >
+    < title > Jogo da memória </ title >
+</ cabeça >
+< corpo >
+    < classe principal  =" jogo de memória " >
+        < div  class =" card " data-card =" bowser " >
+            < img  class =" card-front " src =" ./img/bowser.jpg " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+        < div  class =" card " data-card =" luigi " >
+            < img  class =" card-front " src =" ./img/luigi.png " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+        < div  class =" cartão " data-card =" mario " >
+            < img  class =" card-front " src =" ./img/mario.png " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+        < div  class =" card " data-card =" pêssego " >
+            < img  class =" card-front " src =" ./img/peach.png " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+        < div  class =" card " data-card =" sapo " >
+            < img  class =" card-front " src =" ./img/toad.png " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+        < div  class =" cartão " data-card =" yoshi " >
+            < img  class =" card-front " src =" ./img/yoshi.png " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+        < div  class =" card " data-card =" bowser " >
+            < img  class =" card-front " src =" ./img/bowser.jpg " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+        < div  class =" card " data-card =" luigi " >
+            < img  class =" card-front " src =" ./img/luigi.png " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+        < div  class =" cartão " data-card =" mario " >
+            < img  class =" card-front " src =" ./img/mario.png " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+        < div  class =" card " data-card =" pêssego " >
+            < img  class =" card-front " src =" ./img/peach.png " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+        < div  class =" card " data-card =" sapo " >
+            < img  class =" card-front " src =" ./img/toad.png " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+        < div  class =" cartão " data-card =" yoshi " >
+            < img  class =" card-front " src =" ./img/yoshi.png " alt =" Face da carta " >
+            < img  class =" card-back " src =" ./img/box.png " alt =" Verso da carta " >
+        </ div >
+    </ principal >
+    < script  src =" ./script.js " > </ script >
+</ corpo >
+</ html > 
 
-cabeçalho {
- exibição : flexível;
- align-items : centro;
- justificar-conteúdo : espaço entre;
- cor de fundo :  rgba ( 255 ,  255 ,  255 ,  0,8 );
- tamanho da fonte :  1,2 em ;
- largura :  100 % ;
- largura máxima :  800 px ;
- preenchimento :  30px ; _
- margem :  0  0  15 px ;
- raio da borda :  5 px ;
-}
-
-. grade {
-    exibição : grade;
-    largura :  100 % ;
-    largura máxima :  800 px ;
-    grid-template-columns :  repeat ( 5 ,  1 fr );
-    intervalo :  15 px ;
-    margem :  0 automático;
-}
-
-. cartão {
-    largura :  100 % ;
-    relação de aspecto :  3/4 ;
-    raio da borda :  5 px ;
-    posição : relativa;
-    transição : todos os 400 ms de facilidade;
-    transform-style : preserve-3d;
-}
-
-. rosto {
-    largura :  100 % ;
-    altura :  100 % ;
-    posição : absoluta;
-    tamanho do fundo : capa;
-    posição de fundo : centro;
-    borda :  verde sólido de 2 px ;
-    raio da borda :  5 px ;
-    transição : todos os 400 ms de facilidade;
-}
-
-. frente {
-    transform :  girarY ( 180 graus );
-}
-
-. voltar {
-    imagem de fundo :  url ( '../src/back.png' );
-    backface-visibility : oculto;
-}
-
-. carta-revelar {
-    transform :  girarY ( 180 graus );
-}
-
-. cartão desativado {
-    filtro : saturar ( 0 );
-    opacidade :  0,5 ;
-}
